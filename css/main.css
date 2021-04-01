@@ -1,0 +1,11 @@
+@import 'prt.css';
+@import 'nav.css';
+@import 'skills.css';
+@import 'file.css';
+@import 'hbd.css';
+@import 'sk.css';
+
+body{
+    background-image: linear-gradient(100deg, #8c8f8e, #8e9494, #92999c, #989da4, #a0a1aa, #a8a3ac, #b0a6ad, #b7a9ad, #bbacab, #bdb0aa, #bcb5ab, #b9baaf);
+    margin: 0;
+}

@@ -1,0 +1,70 @@
+#file{
+    position: absolute;
+    width: 63px;
+    height: 100%;
+    right: 0;
+    z-index: 5;
+}
+
+.file-d{
+    display: flex;
+}
+
+.col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 300ms;
+}
+
+.fl-title{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    animation: skl 1s;
+}
+
+
+#line-rigth-2 {
+    position: absolute;
+    width: 75px;
+    right: 0;
+    display:none;
+}
+
+.fl-more{
+    position: absolute;
+    right: 37px;
+    overflow: hidden;
+    transition: 110ms;
+    transform: scaleX(0);
+}
+
+
+.fl-title:hover .book{
+    transform: scale(0);
+}
+
+.fl-title:hover .fl-more{
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 380px){
+    #file{
+        height: 70%;
+    }
+    .col-4{
+        align-items: flex-end;
+        transition: 300ms;
+    }
+
+    #line-rigth {
+        display: none;
+    }
+    #line-rigth-2 {
+        display: block;
+    }
+}
