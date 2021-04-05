@@ -11,37 +11,6 @@ function letras() {
 
 letras();
 
-
-$(document).ready(function () {
-    $(".skl-more").click(function () {
-        var carga = $("#hbd");
-        carga.animate({
-            backgroundColor: "red"
-        }, "slow");
-        carga.animate({
-            height: 'toggle',
-            backgroundColor: "rgba(5,18,27,1)"
-        }, "slow");
-    });
-});
-
-$(document).ready(function () {
-    $(".skl-more").click(function () {
-        var cargando = $("#cargando");
-        cargando.animate({ width: '60%' }, 1500);
-    });
-});
-
-$(document).ready(function () {
-    $("#bn").click(function () {
-        var carga = $(".hbd-map");
-        carga.animate({
-            height: 'toggle'
-        });
-    });
-});
-
-
 /*
 function load(){
     var carga = $("#cargando");
@@ -51,15 +20,31 @@ function load(){
 load();*/
 
 $(document).ready(function () {
-    $("#showmenu").click(function () {
-        $("#menu").css({
-            display: 'block',
-            zIndex: '101'
+    function showmenu() {
+        $("#showmenu").click(function () {
+            $("#menu").css({
+                display: 'block',
+                zIndex: '101'
+            });
+            $("#about, .c-2, .c-3, .c-0, .m-close").animate({
+                opacity: '1',
+            }, 550);
         });
-        $("#about, .c-2, .c-3, .c-0, .m-close").animate({
-            opacity: '1',
-        }, 550);
-    });
+    }
+    function showskil() {
+        $("#m-sk").click(function () {
+            $("#sk").animate({
+                height: '100vh',
+                zIndex: '102',
+            }, 800);
+            $(".sk-ic").css({
+                transform: 'translateX(0px)',
+                Transition: '900ms'
+            });
+        });
+    }
+    showmenu();
+    showskil();
 });
 
 $(document).ready(function () {
@@ -78,17 +63,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     function close() {
-        $("#m-sk").click(function () {
-            $("#sk").animate({
-                height: '100vh',
-                zIndex: '102',
-            }, 800);
-            $(".sk-ic").css({
-                transform: 'translateX(0px)',
-                Transition: '900ms'
-            });
-        });
         $(".sk-close").click(function () {
+            location.reload(1);
             $("#sk").css({
                 zIndex: "0",
                 height: '0',
