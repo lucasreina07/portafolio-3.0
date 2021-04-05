@@ -14,7 +14,7 @@
 
 .skl-title{
     font-family: monospace;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
@@ -42,27 +42,4 @@
     100%{
         transform: translateY(0px);
     }
-}
-
-.skl-more{
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1.5em;
-    overflow: hidden;
-    transition: 110ms;
-    transform: scale(0);
-}
-
-.book{
-    transition: 100ms ;
-    transform: scale(1);
-}
-
-.skl-title:hover .book{
-    transform: scale(0);
-}
-
-.skl-title:hover .skl-more{
-    transform: scale(1);
 }

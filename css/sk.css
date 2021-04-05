@@ -1,20 +1,44 @@
 #sk{
     background-color: rgba(5,18,27,1);
-    border-top: 1px solid rgba(73,94,114,1);
-    height: 300px;
+    height: 0;
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 102;
+    overflow: hidden;
 }
 
 .col-6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    text-align: center;
 }
 
 .sk-title{
-    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: auto;
+    height: 2em;
+    background-color: rgba(73,94,114,0.4);
+    color: white;
     font-size: 20px;
+    border: 1px solid rgba(73,94,114,1);
+    box-shadow: -4px 4px 0px rgba(73,94,114,1);
+    margin: 1em 270px 1em 270px;
+    transition: 300ms;
+}
+
+.sk-t{
+    width: 95%;
     text-align: center;
+}
+
+.sk-close{
+    text-align: end;
 }
 
 .sk-ic{
@@ -22,15 +46,160 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: white;
-    height: 100px;
-    width: 200px;
-    border: 1px solid #2b2b2b;
-    margin: 2em;
+    color: rgba(0,204,0,.75);
+    height: 55px;
+    width: auto;
+    margin: auto 15em;
+    padding-top: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(73,94,114,1);
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 1px solid rgba(73,94,114,1);
+    /*background-color: rgba(73,94,114,0.4);
+    box-shadow: -4px 4px 0px rgba(73,94,114,1);*/
+    transition: 300ms;
+    text-align: left;
+    transform: translateX(-500px);
+}
+
+.sk-tc{
+    font-size: 16px;
+    color: white;
+    width: 180px;
+    height: 35px;
     background-color: rgba(73,94,114,0.4);
     box-shadow: -4px 4px 0px rgba(73,94,114,1);
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.sk-plus{
+    margin: 2px 5px;
+}
+
+ .sk-frw{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sk-frw-1::before{
+    content: "";
+    width: 70%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+.sk-frw-2::before{
+    content: "";
+    width: 50%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+.sk-frw-3::before{
+    content: "";
+    width: 76%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-4::before{
+    content: "";
+    width: 60%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-5::before{
+    content: "";
+    width: 50%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-6::before{
+    content: "";
+    width: 90%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-7::before{
+    content: "";
+    width: 78%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-8::before{
+    content: "";
+    width: 76%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.sk-frw-9::before{
+    content: "";
+    width: 87%;
+    height: 12px;
+    background-color: green;
+    box-shadow: -3px 5px 0px rgb(64 82 99);
+    display: block;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+    .sk-ic{
+        margin: auto 150px;
+    }
+    .sk-title{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+
+}
+
+@media screen and (max-width: 720px) {
+    .sk-ic{
+        margin: auto 1em;
+    }
+    .sk-title{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
