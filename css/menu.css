@@ -1,9 +1,20 @@
 #menu{
+    /*background-color: rgba(5,18,27,1);*/
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    z-index: 101;
+    z-index: -1;
     display: none;
+    animation: menu 1s;
+}
+
+@keyframes menu{
+    0%{
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 
@@ -29,23 +40,53 @@
     align-items: flex-end;
     flex-direction: column;
     background-color: rgb(3, 10, 15);
-    opacity: 0;
+    animation: c1 1s;
 }
+
+@keyframes c1{
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .c-2{
     height: 50%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    opacity: 0;
+    animation: c2 1s;
 }
+
+@keyframes c2{
+    0%{
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .c-3{
     height: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
-    opacity: 0;
+    animation: c3 1s;
 }
+
+@keyframes c3{
+    0%{
+        transform: translateX(20%)
+    }
+    100%{
+        transform: translateX(0px)
+    }
+}
+
 .c-0{
     height: 50%;
     display: flex;
@@ -53,14 +94,23 @@
     align-items: flex-start;
     flex-direction: column;
     background-color: rgb(3, 10, 15);
-    opacity: 0;
+    animation: c0 1s;
+}
+
+@keyframes c0{
+    0%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .m-item{
     font-size: 45px;
     color: rgba(41, 53, 65, 0.8);
+    color: rgba(0,255,0,0.7);
     height: 70px;
-    width: 230px;
     margin: 0px 30px;
     display: inline;
     text-shadow: -3px 4px 0px #3e5869;
@@ -94,7 +144,7 @@
     cursor: pointer;
 }
 
- #m-sb, #m-pt, #m-sb-s, #m-pt-s{
+#m-sb, #m-pt, #m-sb-s, #m-pt-s{
     text-align: right;
 }
 

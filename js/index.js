@@ -1,3 +1,4 @@
+const { Transform } = require("stream");
 
 function letras() {
     var name = "Lucas Reina Justiniani";
@@ -11,70 +12,75 @@ function letras() {
 
 letras();
 
-/*
-function load(){
-    var carga = $("#cargando");
-        carga.animate({width: '60%'}, "slow");
+function showMenu() {
+    let menu = document.getElementById("menu");
+
+    menu.style.display = "block";
+    menu.style.zIndex = "101";
 }
 
-load();*/
+function delay() {
+    timeoutID = window.setTimeout(showMenu, 1000);
+}
 
-$(document).ready(function () {
-    function showmenu() {
-        $("#showmenu").click(function () {
-            $("#menu").css({
-                display: 'block',
-                zIndex: '101'
-            });
-            $("#about, .c-2, .c-3, .c-0, .m-close").animate({
-                opacity: '1',
-            }, 550);
-        });
-    }
-    function showskil() {
-        $("#m-sk").click(function () {
-            $("#sk").animate({
-                height: '100vh',
-                zIndex: '102',
-            }, 800);
-            $(".sk-ic").css({
-                transform: 'translateX(0px)',
-                Transition: '900ms'
-            });
-        });
-    }
-    showmenu();
-    showskil();
-});
+function showSkill() {
+    let skil = document.getElementById("sk");
 
-$(document).ready(function () {
-    function animate() {
-        $(".m-close").click(function () {
-            $("#menu").css({
-                display: 'none'
-            });
-            $("#about, .c-2, .c-3, .c-0, .m-close").animate({
-                opacity: '0',
-            }, 450);
-        });
-    }
-    animate();
-});
+    skil.style.height = "100vh";
 
-$(document).ready(function () {
-    function close() {
-        $(".sk-close").click(function () {
-            location.reload(1);
-            $("#sk").css({
-                zIndex: "0",
-                height: '0',
-                overflow: 'hidden'
-            });
-            $("#menu").css({
-                zIndex: "0",
-                display: 'none'
-            });
-        })
+}
+/**/
+function showPlusJava() {
+    let java = document.getElementById("java");
+
+    if (java.style.display === "flex") {
+        java.style.display = "none";
+    } else {
+        java.style.display = "flex";
     }
-    close();
-});
+}
+/**/
+function showPlusSpring() {
+    let spring = document.getElementById("spring");
+
+    if (spring.style.display === "flex") {
+        spring.style.display = "none";
+    } else {
+        spring.style.display = "flex";
+    }
+}
+/**/
+
+
+
+/*
+*
+*
+*
+*/
+
+function closeMenu() {
+    let closemenu = document.getElementById("menu");
+
+    closemenu.style.display = "none";
+    closemenu.style.zIndex = "0";
+}
+
+function closeSK() {
+    let skil = document.getElementById("sk");
+    let closemenu = document.getElementById("menu");
+
+    closemenu.style.display = "none";
+    closemenu.style.zIndex = "0";
+    skil.style.height = "0";
+}
+
+
+
+/*
+ *
+ *
+ *
+ *
+ */
+

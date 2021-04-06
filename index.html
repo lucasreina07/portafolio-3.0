@@ -16,14 +16,15 @@
     <!--//////////////////////////-->
     <header id="skills">
         <div class="row">
+            <!--
             <svg height="35px" width="100%" id="line-top">
                 <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255, 255, 255);stroke-width:1" />
                 Sorry, your browser does not support inline SVG.
-            </svg>
+            </svg> -->
             <div class="col-2">
-                <div id="showmenu" class="skl-title">
+                <div id="showmenu" class="skl-title" >
                     <!--<a class="skl-more">Menu</a>-->
-                    <i class="fas fa-chevron-circle-down"></i>
+                    <i class="fas fa-chevron-circle-down" onclick="showMenu()"></i>
                 </div>
             </div>
         </div>
@@ -31,14 +32,14 @@
     <!--//////////////////////////-->
     <div id="menu">
         <div class="row">
-            <div class="fas fa-window-close m-close"></div>
+            <div class="fas fa-window-close m-close" id="closemenu" onclick="closeMenu()"></div>
             <div class="col-7">
                 <div class="c-4 c-1" id="about">
                     <div id="m-sb" class="m-item">Sobre Mi</div>
                     <div id="m-sb-s" class="m-pr"> Conoceras un pedasito de mi</div>
                 </div>
                 <div class="c-4 c-2">
-                    <div id="m-sk" class="m-item">Skilss</div>
+                    <div id="m-sk" class="m-item" onclick="showSkill()">Skilss</div>
                     <div  class="m-pr"> habilidades que adquiri a lo largo del camino.</div>
                 </div>
                 <div class="c-4 c-3">
@@ -53,24 +54,7 @@
         </div>
     </div>
     <!--//////////////////////////-->
-    <article id="file">
-        <div class="row file-d">
-            <div class="col-4">
-                <div class="fl-title">
-                    <a class="fl-more">info</a>
-                    <i class="fas fa-book book"></i>
-                </div>
-            </div>
-            <svg height="100%" width="100%" id="line-rigth">
-                <line x1="100%" y1="50%" x2="0" y2="50%" style="stroke:rgb(255, 255, 255);stroke-width:1" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <svg height="100%" width="100%" id="line-rigth-2">
-                <line x1="100%" y1="98%" x2="50%" y2="98%" style="stroke:rgb(255, 255, 255);stroke-width:1" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-        </div>
-    </article>
+
     <!--//////////////////////////-->
 
     <!--//////////////////////////-->
@@ -96,54 +80,207 @@
         <div class="sk-row">
             <div class="sk-title">
                 <div class="sk-t">Conocimiento</div>
-                <div class="fas fa-window-close sk-close"></div>
+                <div class="fas fa-window-close sk-close" onclick="closeSK()"></div>
             </div>
             <div class="col-6">
-                <div class="sk-ic">
-                    <div class="sk-tc">Java</div>
-                    <div class="sk-frw sk-frw-1">70%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">Java</div>
+                        <div class="sk-frw sk-frw-1">70%</div>
+                        <div class="fas fa-plus-circle sk-plus" onclick="showPlusJava()"></div>
+                    </div>
+                    <div class="sk-1" id="java">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">JAVA EE / SE</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">POO</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">API</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">SPRING </div>
-                    <div class="sk-frw sk-frw-2">50%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!---->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">Spring</div>
+                        <div class="sk-frw sk-frw-2">50%</div>
+                        <div class="fas fa-plus-circle sk-plus" onclick="showPlusSpring()"></div>
+                    </div>
+                    <div class="sk-1" id="spring">
+                        <div class="sk-item-1">
+                            <i class=" sk-i"></i>
+                            <div class="sk-i-p">Spring Boot</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Spring Security</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Spring Lombook</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">SQL</div>
-                    <div class="sk-frw sk-frw-3">76%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">SQL</div>
+                        <div class="sk-frw sk-frw-3">76%</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">Sintaxis</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Consultas</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Queris</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">JavaScript</div>
-                    <div class="sk-frw sk-frw-4">60%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">JavaScript</div>
+                        <div class="sk-frw sk-frw-4">Sintaxis</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">DOM</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">POO</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">API</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">NodeJS</div>
-                    <div class="sk-frw sk-frw-5">50%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!---->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">NodeJS</div>
+                        <div class="sk-frw sk-frw-5"></div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">CRUD</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Conexion a Servidores</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Express JS</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">Bootstrap</div>
-                    <div class="sk-frw sk-frw-6">90%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">Bootstrap</div>
+                        <div class="sk-frw sk-frw-6">90%</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">Layouts</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Componentes</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">API</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">Excel</div>
-                    <div class="sk-frw sk-frw-7">78%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">Exel</div>
+                        <div class="sk-frw sk-frw-7">78%</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">Tablas</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Graficas</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Tablas Dinamicas</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">HTML5</div>
-                    <div class="sk-frw sk-frw-8">76%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">HMTL5</div>
+                        <div class="sk-frw sk-frw-8">95%</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">Sintaxis</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">SVG</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Maquetado</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="sk-ic">
-                    <div class="sk-tc">CSS</div>
-                    <div class="sk-frw sk-frw-9">87%</div>
-                    <div class="fas fa-plus-circle sk-plus"></div>
+                <!-- -->
+                <div class="sk-c">
+                    <div class="sk-ic">
+                        <div class="sk-tc">CSS3</div>
+                        <div class="sk-frw sk-frw-9">87%</div>
+                        <div class="fas fa-plus-circle sk-plus"></div>
+                    </div>
+                    <div class="sk-1">
+                        <div class="sk-item-1">
+                            <i class="fab fa-java sk-i"></i>
+                            <div class="sk-i-p">Diseño</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-boxes sk-i"></i>
+                            <div class="sk-i-p">Psudoelementos</div>
+                        </div>
+                        <div class="sk-item-1">
+                            <i class="fas fa-book sk-i"></i>
+                            <div class="sk-i-p">Paletas de Colores</div>
+                        </div>
+                    </div>
                 </div>
+                <!-- -->
             </div>
         </div>
     </div>

@@ -5,12 +5,11 @@
     position: absolute;
     top: 0;
     z-index: 102;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .col-6{
     display: inline;
-    text-align: center;
 }
 
 .sk-title{
@@ -28,26 +27,27 @@
     font-size: 20px;
     border: 1px solid rgba(73,94,114,1);
     box-shadow: -4px 4px 0px rgba(73,94,114,1);
-    margin: 1em 270px 1em 270px;
+    margin: 1em 195px 1em 195px;
     transition: 300ms;
 }
 
 .sk-t{
     width: 95%;
     text-align: center;
+    text-shadow: -3px 3px 0px rgba(0,204,0,.75);
 }
 
 .sk-close{
     text-align: end;
 }
 
+
+
 .sk-ic{
     font-family: monospace;
-    font-size: 18px;
-    font-weight: 700;
     letter-spacing: 2px;
     color: rgba(0,204,0,.75);
-    height: 55px;
+    height: 50px;
     width: auto;
     margin: auto 15em;
     padding-top: 10px;
@@ -58,8 +58,6 @@
     /*background-color: rgba(73,94,114,0.4);
     box-shadow: -4px 4px 0px rgba(73,94,114,1);*/
     transition: 300ms;
-    text-align: left;
-    transform: translateX(-500px);
 }
 
 .sk-tc{
@@ -68,17 +66,18 @@
     width: 180px;
     height: 35px;
     background-color: rgba(73,94,114,0.4);
-    box-shadow: -4px 4px 0px rgba(73,94,114,1);
+    box-shadow: -4px 0px 0px rgba(73,94,114,1);
     vertical-align: middle;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 .sk-plus{
     margin: 2px 5px;
 }
 
- .sk-frw{
+.sk-frw{
     color: white;
     width: 100%;
     display: flex;
@@ -182,6 +181,45 @@
     margin-right: 10px;
 }
 
+
+.sk-1{
+    background-color: rgba(73,94,114,0.4);
+    width: calc(100% - 20px) / 3;
+    height: 100px;
+    margin: auto 12em 15px 12em;
+    display: flex;
+    justify-content: space-around;
+    border-left: 5px outset red;
+    /*box-shadow: -4px 4px 0px rgba(73,94,114,1);*/
+    transition: 300ms;
+}
+
+#java{
+    display: none;
+}
+#spring{
+    display: none;
+}
+
+.sk-item-1{
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk-i{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.sk-i-p{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
 @media screen and (max-width: 1120px) {
     .sk-ic{
         margin: auto 150px;
@@ -190,6 +228,9 @@
         margin-left: 150px;
         margin-right: 150px;
     }
+    .sk-1{
+        margin: 0px 9.4em 15px 9.4em;
+    }
 
 
 }
@@ -197,9 +238,13 @@
 @media screen and (max-width: 720px) {
     .sk-ic{
         margin: auto 1em;
+        margin-bottom: 15px;
     }
     .sk-title{
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .sk-1{
+        margin: 0px 1em 15px 1em;
     }
 }
