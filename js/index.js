@@ -1,5 +1,3 @@
-/*const { Transform } = require("stream");*/
-
 function letras() {
     var name = "Lucas Reina Justiniani";
     var divname = document.getElementById("name");
