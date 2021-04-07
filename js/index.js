@@ -27,6 +27,13 @@ function showSkill() {
     skil.style.height = "100vh";
 
 }
+
+function showAB() {
+    let ab = document.getElementById("ab-about");
+
+    ab.style.display = "block";
+
+}
 /**/
 function showPlusJava() {
     let java = document.getElementById("java");
@@ -47,6 +54,8 @@ function showPlusSpring() {
         spring.style.display = "flex";
     }
 }
+
+
 /**/
 
 
@@ -71,6 +80,15 @@ function closeSK() {
     closemenu.style.display = "none";
     closemenu.style.zIndex = "0";
     skil.style.height = "0";
+}
+
+function closeAB() {
+    let ab = document.getElementById("ab-about");
+    let closemenu = document.getElementById("menu");
+
+    closemenu.style.display = "none";
+    closemenu.style.zIndex = "0";
+    ab.style.display = "none";
 }
 
 
