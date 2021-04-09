@@ -14,22 +14,6 @@
 
 <body>
     <!--//////////////////////////-->
-    <header id="skills">
-        <div class="row">
-            <!--
-            <svg height="35px" width="100%" id="line-top">
-                <line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255, 255, 255);stroke-width:1" />
-                Sorry, your browser does not support inline SVG.
-            </svg> -->
-            <div class="col-2">
-                <div id="showmenu" class="skl-title">
-                    <!--<a class="skl-more">Menu</a>-->
-                    <i class="fas fa-chevron-circle-down" onclick="showMenu()"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--//////////////////////////-->
     <div id="menu">
         <div class="row">
             <div class="fas fa-window-close m-close" id="closemenu" onclick="closeMenu()"></div>
@@ -62,13 +46,74 @@
         <div class="row">
             <div class="col-1">
                 <div class="prt-title">
-                    <div class="before-name">Hola, soy</div>
-                    <div class="name" id="name"></div>
-                    <div class="prt-more">
-                        <button class="btn-prt" type="button">Sobre Mi</button>
-                        <div class="social">
-                            <div class="social-ic"><i class="fab fa-github ic"></i></div>
-                            <div class="social-ic"><i class="fab fa-linkedin-in ic"></i></div>
+                    <div class="before-name" id="bfn">
+                        <div class="prt-menu">
+                            <div class="prt-m-ul">
+                                <div class="prt-m-i">menu</div>
+                                <div class="prt-m-i m-1" onclick="showMItems()" style="text-align: center;">info</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name" id="name">
+                        <div class="prt-name">
+                            <div class="n-1">Hola Me Llamo,</div>
+                            <div class="n-2">Lucas Justiniani</div>
+                            <div class="n-3">String Programador = <br/>{ Back End & Front End }</div>
+                        </div>
+                    </div>
+                    <div class="prt-more" id="ptm">
+                        <div class="prt-more-m">
+                            <button class="btn-prt" type="button">Sobre Mi</button>
+                            <div class="social">
+                                <div class="social-ic"><i class="fab fa-github ic"></i></div>
+                                <div class="social-ic"><i class="fab fa-linkedin-in ic"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//////////////////////////-->
+    <div id="mitem">
+        <div class="row">
+            <div class="col-1-1">
+                <div class="prt-miitem">
+                    <div id="miclose" class="m-item-close fas fa-window-close" onclick="closeMItems()"></div>
+                    <div class="prt-m-item" id="psm" >
+                        <div class="m-btn">
+                            <div class="m-btn-p">
+                                <div class="m-t">Sobre MI</div>
+                                <div class="m-p">Conoceras un pedasito de mi</div>
+                            </div>
+                            <div class="m-btn-p btn-left"  onclick="showAB()">info</div>
+                        </div>
+                    </div>
+                    <div class="prt-m-item"  id="psl">
+                        <div class="m-btn">
+                            <div class="m-btn-p">
+                                <div class="m-t">Skills</div>
+                                <div class="m-p">habilidades que adquiri a lo largo del camino.</div>
+                            </div>
+                            <div class="m-btn-p btn-left" onclick="showSkill()">info</div>
+                        </div>
+                    </div>
+                    <div class="prt-m-item"  id="pp">
+                        <div class="m-btn">
+                            <div class="m-btn-p">
+                                <div class="m-t">Proyectos</div>
+                                <div class="m-p">Largo de mi carrera</div>
+                            </div>
+                            <div class="m-btn-p btn-left">info</div>
+                        </div>
+                    </div>
+                    <div class="prt-m-item"  id="pct">
+                        <div class="m-btn">
+                            <div class="m-btn-p">
+                                <div class="m-t">Contactar</div>
+                                <div class="m-p">puedes contactarme</div>
+                            </div>
+                            <div class="m-btn-p btn-left">info</div>
                         </div>
                     </div>
                 </div>
@@ -77,60 +122,48 @@
     </div>
     <!--//////////////////////////-->
     <div id="ab-about">
-        <div class="row ab-row">
-            <div class="col-8">
-                <div class="ab-e">
-                    <div class="ab-prt">
-                        <div class="ab-logo">LOGO</div>
-                        <div class="ab-enc">
-                            <div class="ab-title">
-                                <div>Lucas Reina</div>
-                                <div class="ab-close fas fa-window-close" onclick="closeAB()"></div>
+        <div class="row">
+                <div class="col-1-1">
+                    <div class="prt-miitem">
+                        <div class="m-item-close fas fa-window-close" onclick="closeAB()"></div>
+                        <div class="prt-m-item">
+                            <div class="m-btn">
+                                <div class="m-btn-p">
+                                    <div class="m-t">Lucas Justiniani</div>
+                                    <div class="m-p">Programador</div>
+                                </div>
+                                <div class="m-btn-p btn-left"  >LOGO</div>
                             </div>
-                            <div class="ab-sl">Programador</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="ab-carrera">
-                    <div class="ab-ca-title">
-                        <div>Estudios</div>
-                    </div>
-                    <div class="ab-mod">
-                        <div class="ab-ca-mod ab-mg">
-                            <div class="ab-ca-1">Tec.En Sistemas Informaticos</div>
-                            <div class="ab-ca-p">GN Mexico</div>
-                            <div class="ab-ca-p">Culminado</div>
+                        <div class="prt-m-item">
+                            <div class="m-btn">
+                                <div class="m-btn-p">
+                                    <div class="m-t">Univercidad Tegnologica</div>
+                                    <div class="m-p">ing. en sistemas </div>
+                                </div>
+                                <div class="m-btn-p btn-left" onclick="showSkill()">info</div>
+                            </div>
                         </div>
-                        <div class="ab-ca-mod">
-                            <div class="ab-ca-1">Ing. en Sistemas</div>
-                            <div class="ab-ca-p">Universidad Tecnologica de Panamá</div>
-                            <div class="ab-ca-p">Año: 2020 / Actualidad</div>
+                        <div class="prt-m-item">
+                            <div class="m-btn">
+                                <div class="m-btn-p">
+                                    <div class="m-t">Certificados</div>
+                                    <div class="m-p">Largo de mi carrera</div>
+                                </div>
+                                <div class="m-btn-p btn-left">
+                                    <div>JAVA</div>
+                                    <div>SQL</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9">
-                <div class="ab-carrera">
-                    <div class="ab-ca-title">
-                        <div>Certificados</div>
-                    </div>
-                    <div class="ab-mod">
-                        <div class="ab-ca-mod ab-mg">
-                            <div class="ab-ca-1">JAVA</div>
-                            <div class="ab-ca-p">LINK</div>
-                            <div class="ab-ca-p">Culminado</div>
-                        </div>
-                        <div class="ab-ca-mod ab-mg">
-                            <div class="ab-ca-1">SQL</div>
-                            <div class="ab-ca-p">LINK</div>
-                            <div class="ab-ca-p">Año: 2020 / Actualidad</div>
-                        </div>
-                        <div class="ab-ca-mod">
-                            <div class="ab-ca-1">PHP</div>
-                            <div class="ab-ca-p">Gobierno Nacional de Mexico</div>
-                            <div class="ab-ca-p">Culminado</div>
+                        <div class="prt-m-item">
+                            <div class="m-btn">
+                                <div class="m-btn-p">
+                                    <div class="m-t">Contactar</div>
+                                    <div class="m-p">puedes contactarme</div>
+                                </div>
+                                <div class="m-btn-p btn-left">info</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,6 +380,7 @@
         </div>
     </div>
     <!--//////////////////////////-->
+    <!--
     <footer class="cn" id="ftr">
         <div class="rw">
             <div class="col-3">
@@ -355,7 +389,7 @@
                 <div class="ftr-ic"><i class="fas fa-info ic-stl"></i></div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--//////////////////////////-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/index.js" async defer></script>

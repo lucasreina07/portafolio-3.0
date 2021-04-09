@@ -4,8 +4,11 @@
 @import 'sk.css';
 @import 'menu.css';
 @import 'about.css';
+@import 'menuitem.css';
 
 body{
-    background-color: rgba(5,18,27,1);
+    background-color: rgba(5,67,132,1);
+    background-image: linear-gradient(to bottom, rgba(3, 49, 99, 0.75), rgba(7, 24, 36, 0.75)), url("../img/honey.png");
+    background-size: 150px;
     margin: 0;
 }

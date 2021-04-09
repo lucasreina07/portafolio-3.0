@@ -1,20 +1,12 @@
-function letras() {
-    var name = "Lucas Reina Justiniani";
-    var divname = document.getElementById("name");
-    var print = divname.innerHTML = name;
-    var str = divname.innerHTML;
-
-    console.log(print.length)
-    console.log(print);
-}
-
-letras();
-
 function showMenu() {
     let menu = document.getElementById("menu");
+    let mitem = document.getElementById("mitem");
+    let pitem = document.getElementById("psm");
 
     menu.style.display = "block";
     menu.style.zIndex = "101";
+    pitem.style.opacity = "1";
+    mitem.style.opacity = "1"
 }
 
 function delay() {
@@ -30,10 +22,22 @@ function showSkill() {
 
 function showAB() {
     let ab = document.getElementById("ab-about");
+    let psm = document.getElementById("psm");
+    let psl = document.getElementById("psl");
+    let pp = document.getElementById("pp");
+    let pct = document.getElementById("pct");
+    let btn = document.getElementById("miclose");
 
+    btn.style.opacity = "0"
     ab.style.display = "block";
-
+    psm.style.opacity = "0";
+    psl.style.opacity = "0";
+    pp.style.opacity = "0";
+    pct.style.opacity = "0";
 }
+
+
+
 /**/
 function showPlusJava() {
     let java = document.getElementById("java");
@@ -54,6 +58,29 @@ function showPlusSpring() {
         spring.style.display = "flex";
     }
 }
+
+function showMItems(){
+    let mitem = document.getElementById("mitem");
+    let psm= document.getElementById("psm");
+    let psl = document.getElementById("psl");
+    let pp = document.getElementById("pp");
+    let pct = document.getElementById("pct");
+    let bfn = document.getElementById("bfn");
+    let nn = document.getElementById("name");
+    let ptm = document.getElementById("ptm");
+    let btn = document.getElementById("miclose");
+
+    btn.style.opacity = "1"
+    psm.style.opacity = "1"
+    psl.style.opacity = "1";
+    pp.style.opacity = "1";
+    pct.style.opacity = "1";
+    bfn.style.opacity = "0"
+    nn.style.opacity = "0"
+    ptm.style.opacity = "0"
+    mitem.style.display = "block";
+}
+
 
 
 /**/
@@ -84,13 +111,30 @@ function closeSK() {
 
 function closeAB() {
     let ab = document.getElementById("ab-about");
-    let closemenu = document.getElementById("menu");
+    let bfn = document.getElementById("bfn");
+    let nn = document.getElementById("name");
+    let ptm = document.getElementById("ptm");
+    let mitem = document.getElementById("mitem");
 
-    closemenu.style.display = "none";
-    closemenu.style.zIndex = "0";
+    bfn.style.opacity = "1"
+    nn.style.opacity = "1"
+    ptm.style.opacity = "1"
     ab.style.display = "none";
+    mitem.style.display = "none";
 }
 
+function closeMItems(){
+    let mitem = document.getElementById("mitem");
+    let bfn = document.getElementById("bfn");
+    let nn = document.getElementById("name");
+    let ptm = document.getElementById("ptm");
+
+    bfn.style.opacity = "1"
+    nn.style.opacity = "1"
+    ptm.style.opacity = "1"
+    mitem.style.opacity = "0"
+    mitem.style.display = "none";
+}
 
 
 /*
@@ -100,3 +144,8 @@ function closeAB() {
  *
  */
 
+function info(){
+    let bfn = document.getElementById("bfn");
+
+    bfn.style.transform = "translateX(100px)"
+}

@@ -1,0 +1,117 @@
+#mitem{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 91.5vh;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.col-1-1 {
+    /*background-color: rgb(228,213,183);
+    /*background-image: url("../img/line.png");*/
+    background-size: 100px;
+    border: 1px solid rgba(62,88,105,1);
+    box-shadow: -4px 4px 0px rgba(73,94,114,0.5);
+    width: 500px;
+    height: 80%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 2em;*/
+}
+
+.prt-miitem {
+    width: 100%;
+    height: 100%;
+    display: inline;
+    animation: prt 1s;
+}
+
+@keyframes prt{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.prt-m-item{
+    height: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+}
+
+.m-btn{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(73,94,114,1);
+    background-color: rgba(217,185,155,1);;
+    box-shadow: -4px 4px 0px rgba(73,94,114,1);
+    transition: 500ms ease-in-out;
+}
+
+.m-item-close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    font-size: 20px;
+    color: green;
+    background-color: black;
+    text-align: center;
+}
+
+.m-btn-p{
+    width: calc(70% / 2);
+}
+
+.btn-left{
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(73,94,114,0.4);
+    border: 1px solid rgba(64,82,99,1);
+    box-shadow: -4px 4px 0px rgba(73,94,114,0.7);
+}
+.m-t{
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 700;
+}
+.m-p{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .col-1-1{
+        height: 100%;
+        width: 95%;
+    }
+    .m-t{
+        font-size: 18px;
+
+    }
+    .m-p{
+        font-size: 14px;
+    }
+}

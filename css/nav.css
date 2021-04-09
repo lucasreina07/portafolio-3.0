@@ -1,9 +1,7 @@
 #ftr{
-    bottom: 0;
     left: 0;
     position: fixed;
     width: 100vw;
-    height: 10%;
     z-index: 100;
     display: block;
 }
