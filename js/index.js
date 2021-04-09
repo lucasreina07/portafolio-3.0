@@ -124,6 +124,7 @@ function closeAB() {
 }
 
 function closeMItems(){
+    let mitem = document.getElementById("mitem");
     let bfn = document.getElementById("bfn");
     let nn = document.getElementById("name");
     let ptm = document.getElementById("ptm");
