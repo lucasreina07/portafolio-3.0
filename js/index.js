@@ -70,14 +70,14 @@ function showMItems(){
     let ptm = document.getElementById("ptm");
     let btn = document.getElementById("miclose");
 
-    btn.style.opacity = "1"
-    psm.style.opacity = "1"
+    btn.style.opacity = "1";
+    psm.style.opacity = "1";
     psl.style.opacity = "1";
     pp.style.opacity = "1";
     pct.style.opacity = "1";
-    bfn.style.opacity = "0"
-    nn.style.opacity = "0"
-    ptm.style.opacity = "0"
+    bfn.style.opacity = "0";
+    nn.style.opacity = "0";
+    ptm.style.opacity = "0";
     mitem.style.display = "block";
 }
 
@@ -124,7 +124,6 @@ function closeAB() {
 }
 
 function closeMItems(){
-    let mitem = document.getElementById("mitem");
     let bfn = document.getElementById("bfn");
     let nn = document.getElementById("name");
     let ptm = document.getElementById("ptm");
@@ -132,7 +131,6 @@ function closeMItems(){
     bfn.style.opacity = "1"
     nn.style.opacity = "1"
     ptm.style.opacity = "1"
-    mitem.style.opacity = "0"
     mitem.style.display = "none";
 }
 
